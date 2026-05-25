@@ -6,7 +6,7 @@ API ASP.NET Core para funcionalidades de IA com foco em RAG (Retrieval-Augmented
 - busca semântica de chunks no Elasticsearch,
 - perguntas com contexto (RAG) usando OpenAI,
 
-<img width="1875" height="867" alt="image" src="https://github.com/user-attachments/assets/a83012a1-871f-4fc2-a21d-fd92688f0810" />
+<img width="1875" height="867" alt="Captura de tela 2026-05-24 222155" src="https://github.com/user-attachments/assets/076c3250-3b51-4434-a431-130aba2e4a2c" />
 
 
 ## O que o projeto faz
