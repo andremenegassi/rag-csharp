@@ -1,3 +1,4 @@
+
 # IA API
 
 API ASP.NET Core para funcionalidades de IA com foco em RAG (Retrieval-Augmented Generation):
@@ -168,9 +169,7 @@ curl -X POST "$BASE_URL/assistent/questions/chunks" \
 ```
 
 Com isso, você pode manter indexação/recuperação nesta API e usar o OpenWebUI como interface de chat. A integração pode ocorrer via Tools ou Filters disponíveis pelo OpenWebUI:
-<img width="898" height="620" alt="image" src="https://github.com/user-attachments/assets/6acaf771-b078-4d41-af13-b2ff091a4fb0" />
-
-<img width="1359" height="522" alt="image" src="https://github.com/user-attachments/assets/e052a30c-15c5-4930-827b-ec1f4b2b9170" />
+ 
 
 
 
