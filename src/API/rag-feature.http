@@ -1,0 +1,54 @@
+@baseUrl = http://localhost:6080
+@theme = juridico
+@topK = 5
+
+### Healthcheck
+GET {{baseUrl}}/health
+
+### Upload documento markdown/pdf
+# Ajuste o caminho do arquivo conforme seu ambiente local.
+POST {{baseUrl}}/documents/upload?force=false
+Content-Type: multipart/form-data; boundary=BoundaryRagUpload
+
+--BoundaryRagUpload
+Content-Disposition: form-data; name="theme"
+
+{{theme}}
+--BoundaryRagUpload
+Content-Disposition: form-data; name="tags"
+
+contrato
+--BoundaryRagUpload
+Content-Disposition: form-data; name="file"; filename="exemplo.md"
+Content-Type: text/markdown
+
+< ./samples/exemplo.md
+--BoundaryRagUpload--
+
+### Listar documentos por tema
+GET {{baseUrl}}/documents?theme={{theme}}
+
+### Obter documento por id
+GET {{baseUrl}}/documents/{{documentId}}
+
+### Listar temas
+GET {{baseUrl}}/themes
+
+### Perguntas com RAG por tema
+POST {{baseUrl}}/questions
+Content-Type: application/json
+
+{
+  "question": "Quais clausulas tratam de multa?",
+  "theme": "{{theme}}",
+  "topK": {{topK}}
+}
+
+### Pergunta por agente tematico
+POST {{baseUrl}}/agents/{{theme}}/ask
+Content-Type: application/json
+
+{
+  "question": "Resuma os principais pontos regulatorios",
+  "topK": {{topK}}
+}
