@@ -170,9 +170,8 @@ curl -X POST "$BASE_URL/assistent/questions/chunks" \
 
 Com isso, você pode manter indexação/recuperação nesta API e usar o OpenWebUI como interface de chat. A integração pode ocorrer via Tools ou Filters disponíveis pelo OpenWebUI:
  
-
-
-
+ <img width="1458" height="595" alt="Captura de tela 2026-05-24 104253" src="https://github.com/user-attachments/assets/0e15982e-e8b5-4c72-b7a8-0ad3e2c209dd" />
+ <img width="1413" height="727" alt="image" src="https://github.com/user-attachments/assets/8e189d9e-ae22-4e21-8e34-959bcd557148" />
 
 
 ## Como rodar
